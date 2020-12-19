@@ -1,0 +1,34 @@
+2020-12-19 04:32:16.233903
+--------------------------
+
+True  Developer
+
+Frontend  Developer
+
+Backend  Developer
+
+FullStack  Developer
+
+Corporation CorpEe
+
+1 
+
+No workers to analyze
+division by zero 
+
+OK
+
+Goodbye	Developer	Aa
+
+Goodbye	Developer	Bb
+
+Goodbye	Developer	Cc
+
+Goodbye	Developer	Dd
+
+Goodbye	Corporation	CorpEe
+
+Unfortunately, program finished!
+LastOperation:  2020-12-19 04:32:16.233903
+
+Time:  0.12262582778930664
