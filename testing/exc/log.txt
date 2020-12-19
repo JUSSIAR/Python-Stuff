@@ -1,4 +1,4 @@
-2020-12-19 04:32:16.233903
+2020-12-20 00:23:35.164074
 --------------------------
 
 True  Developer
@@ -11,24 +11,40 @@ FullStack  Developer
 
 Corporation CorpEe
 
-1 
-
 No workers to analyze
 division by zero 
 
 OK
 
+Bb x2 y2
+Cc x3 y3
+Dd x4 y4
+3
+workBack() takes 0 positional arguments but 1 was given
+
+workFull() takes 0 positional arguments but 1 was given
+
+workFront() takes 0 positional arguments but 1 was given
+
+1 
+
+Result: 23.333333333333332
+OK
+
 Goodbye	Developer	Aa
-
-Goodbye	Developer	Bb
-
-Goodbye	Developer	Cc
-
-Goodbye	Developer	Dd
 
 Goodbye	Corporation	CorpEe
 
-Unfortunately, program finished!
-LastOperation:  2020-12-19 04:32:16.233903
+Goodbye	Developer	Cc
 
-Time:  0.12262582778930664
+Goodbye	Developer	Bb
+
+Goodbye	Developer	Dd
+
+Unfortunately, program finished!
+LastOperation:  2020-12-20 00:23:35.164074
+
+Time:  0.005240917205810547
+An exception has occurred, use %tb to see the full traceback.
+
+SystemExit: 0
