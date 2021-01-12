@@ -8,8 +8,8 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime as dtm
 
 import sys as system
-system.path.append('D:\\Computer_science\\PythonCode\\flask\\SimpleBlog\\utils')
-print(system.path)
+system.path.append('utils')
+#print(system.path)
 
 import urlList as routing
 
