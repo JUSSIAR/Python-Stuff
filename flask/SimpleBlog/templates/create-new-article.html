@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Add Article
+{% endblock %}
+
+{% block body %}
+<h1> Новая статья </h1>
+<form action="/create-new-article" method="post">
+    <input
+            type="text"
+            name="title"
+            id="title"
+            class="form-control"
+            placeholder="Название статьи..."
+    > <br/>
+    <textarea
+            name="intro"
+            id="intro"
+            class="form-control"
+            placeholder="Анонс..."
+    ></textarea> <br/>
+    <textarea
+            name="text"
+            id="text"
+            class="form-control"
+            placeholder="Тело статьи..."
+    ></textarea> <br/>
+    <textarea
+            name="admin"
+            id="admin"
+            class="form-control"
+            placeholder="Комментарий администратора..."
+            readonly
+    ></textarea> <br/>
+    <input type="submit" class="btn btn-success" value="Опубликовать" style="margin-bottom: 2rem;">
+</form>
+{% endblock %}

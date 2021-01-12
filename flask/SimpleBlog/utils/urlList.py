@@ -1,0 +1,5 @@
+MAIN_URL1 = '/'
+MAIN_URL2 = '/home'
+ABOUT_URL = '/about'
+ARTICLES_URL = '/articles'
+NEW_URL = '/create-new-article'
