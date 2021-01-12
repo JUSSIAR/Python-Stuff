@@ -1,4 +1,5 @@
 # Simple Blog with Flask framework
+This is fullstack application with Python-flask
 
 ### Table of contents
 * [General info](#general-info)
@@ -7,7 +8,7 @@
 
 # General info
 This blog is for:
-- Creating articles
+- Creating Articles
 - Posting Articles
 - Communication
 
@@ -25,4 +26,4 @@ $ pip install flask-sqlalchemy
 $ python app.py
 ```
 
-> This is fullstack application with Python-flask
+> If you have any troubles try pip3 & python3
