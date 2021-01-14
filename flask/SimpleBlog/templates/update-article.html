@@ -1,31 +1,32 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Add Article
+Update Article
 {% endblock %}
 
 {% block body %}
-<h1> Новая статья </h1>
-<form action="/create-new-article" method="post">
+<h1> Редактирование </h1>
+<form action="/articles/{{article.id}}/update" method="post">
     <input
             type="text"
             name="title"
             id="title"
             class="form-control"
             placeholder="Название статьи..."
+            value="{{ article.title }}"
     > <br/>
     <textarea
             name="intro"
             id="intro"
             class="form-control"
             placeholder="Анонс..."
-    ></textarea> <br/>
+    >{{ article.intro }}</textarea> <br/>
     <textarea
             name="text"
             id="text"
             class="form-control"
             placeholder="Тело статьи..."
-    ></textarea> <br/>
+    >{{ article.text }}</textarea> <br/>
     <textarea
             name="admin"
             id="admin"
@@ -33,6 +34,6 @@ Add Article
             placeholder="Комментарий администратора..."
             readonly
     ></textarea> <br/>
-    <input type="submit" class="btn btn-success" value="Опубликовать" style="margin-bottom: 2rem;">
+    <input type="submit" class="btn btn-success" value="Сохранить" style="margin-bottom: 2rem;">
 </form>
 {% endblock %}

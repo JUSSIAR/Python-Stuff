@@ -16,6 +16,8 @@
         <br/>
         <p><b>Дата публикации: {{ article.date.date() }}</b></p>
         <p><i>Время публикации: {{ article.date.time() }}</i></p>
+        <a href="/articles/{{ article.id }}/delete" class="btn btn-danger">Удалить</a>
+        <a href="/articles/{{ article.id }}/update" class="btn btn-success">Редактировать</a>
     </div>
 </div>
 {% endblock %}

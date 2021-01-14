@@ -8,3 +8,20 @@
 h1 {
     text-align: center;
 }
+
+.no-articles {
+    font-size: 20px;
+    text-color: "fff";
+}
+
+body {
+    background: url('../img/back.jpg');
+    opacity: 0.95;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer {
+    background: linear-gradient(-20deg, #db7d01, #99ccff);
+    padding: 1rem;
+}

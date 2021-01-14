@@ -7,14 +7,18 @@ Articles
 {% block body %}
 <h1> Список статей </h1>
 <div class="container mt-5">
-    {% for elem in articles %}
-        <div class="alert alert-info">
-            <h2>{{ elem.title }}</h2>
-            <p>{{ elem.intro }}</p>
-            <p><b>Дата публикации: {{ elem.date.date() }}</b></p>
-            <p><i>Время публикации: {{ elem.date.time() }}</i></p>
-            <a href="/articles/{{ elem.id }}" class="btn btn-warning">Читать</a>
-        </div>
-    {% endfor %}
+    {% if articles|length > 0 %}
+        {% for elem in articles %}
+            <div class="alert alert-info">
+                <h2>{{ elem.title }}</h2>
+                <p>{{ elem.intro }}</p>
+                <p><b>Дата публикации: {{ elem.date.date() }}</b></p>
+                <p><i>Время публикации: {{ elem.date.time() }}</i></p>
+                <a href="/articles/{{ elem.id }}" class="btn btn-warning">Читать</a>
+            </div>
+        {% endfor %}
+    {% else %}
+        <b class="no-articles"> Статей еще нет... </b>
+    {% endif %}
 </div>
 {% endblock %}

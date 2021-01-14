@@ -63,7 +63,7 @@ def create():
         try:
             db.session.add(article)
             db.session.commit()
-            return redirect(routing.MAIN_URL1)
+            return redirect(routing.ARTICLES_URL)
         except:
             return "Error"
         finally:
@@ -82,6 +82,34 @@ def show():
 def show_concrete(id):
     article = Article.query.get(id)
     return render_template("concrete-article.html", article=article)
+
+
+@app.route(routing.DELETE_URL)
+def delete_article(id):
+    article = Article.query.get_or_404(id)
+    try:
+        db.session.delete(article)
+        db.session.commit()
+        return redirect(routing.ARTICLES_URL)
+    except:
+        return "Error"
+
+
+@app.route(routing.UPDATE_URL, methods=['POST', 'GET'])
+def update_article(id):
+    article = Article.query.get(id)
+    if request.method == "POST":
+        article.title = request.form['title']
+        article.intro = request.form['intro']
+        article.text = request.form['text']
+
+        try:
+            db.session.commit()
+            return redirect(routing.ARTICLES_URL)
+        except:
+            return "Error"
+    else:
+        return render_template("update-article.html", article=article)
 
 
 if __name__ == "__main__":
