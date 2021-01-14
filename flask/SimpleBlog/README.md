@@ -9,8 +9,9 @@ This is fullstack application with Python-flask
 # General info
 This blog is for:
 - Creating Articles
+- Deleting Articles
+- Editing Articles
 - Posting Articles
-- Communication
 
 # Technologies
 - Python 3.9
