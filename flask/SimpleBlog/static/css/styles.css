@@ -1,6 +1,10 @@
 .content {
-    background: gray;
+    background: rgb(102, 179, 255);
     margin: 2rem;
     min-height: 10vh;
+    padding: 2rem;
+}
+
+h1 {
     text-align: center;
 }

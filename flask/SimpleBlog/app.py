@@ -9,7 +9,7 @@ from datetime import datetime as dtm
 
 import sys as system
 system.path.append('utils')
-#print(system.path)
+print(system.path)
 
 import urlList as routing
 
@@ -42,7 +42,7 @@ def about():
     return render_template("about.html")
 
 
-@app.route('/user/<string:name>/<int:id>')
+@app.route(routing.USER_URL)
 def user(name, id):
     return "User " + name + " " + str(id)
 
@@ -74,7 +74,14 @@ def create():
 
 @app.route(routing.ARTICLES_URL)
 def show():
-    return render_template("articles.html")
+    articles = Article.query.order_by(Article.date.desc()).all()
+    return render_template("articles.html", articles=articles)
+
+
+@app.route(routing.CONCRETE_ARTICLE_URL)
+def show_concrete(id):
+    article = Article.query.get(id)
+    return render_template("concrete-article.html", article=article)
 
 
 if __name__ == "__main__":
