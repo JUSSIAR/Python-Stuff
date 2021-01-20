@@ -18,6 +18,7 @@ This blog is for:
 - Flask
 - SQLalchemy
 - SQLite
+- Bootstrap 4.5
 
 > First of all install Python 3.9 and PyCharm Community Edition 2020
 # Setup and run
