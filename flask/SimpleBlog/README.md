@@ -9,14 +9,16 @@ This is fullstack application with Python-flask
 # General info
 This blog is for:
 - Creating Articles
+- Deleting Articles
+- Editing Articles
 - Posting Articles
-- Communication
 
 # Technologies
 - Python 3.9
 - Flask
 - SQLalchemy
 - SQLite
+- Bootstrap 4.5
 
 > First of all install Python 3.9 and PyCharm Community Edition 2020
 # Setup and run
